@@ -110,7 +110,7 @@ class ChatGPT_Article_Writer {
 
         wp_enqueue_script(
             'chatgpt-article-writer-script',
-            plugins_url('/js/chatgpt-article-writer.js', __FILE__),
+            plugins_url('/chatgpt-article-writer.js', __FILE__),
             array('jquery'),
             '1.0.0',
             true
@@ -257,18 +257,18 @@ class ChatGPT_Article_Writer {
     
         wp_send_json_success($results);
     }
-
+    
     public function enqueue_custom_top_toolbar_script() {
         error_log('enqueue_custom_top_toolbar_script called');
         wp_enqueue_script(
             'custom-top-toolbar-script',
-            plugins_url('/js/toolbar-button.js', __FILE__), // Ensure this path is correct
+            plugins_url('/toolbar-button.js', __FILE__), // Ensure this path is correct
             array('wp-edit-post', 'wp-element', 'wp-components', 'wp-data'),
             '1.0.0',
             true
         );
     }
-
+    
     public function handle_generate_article_ajax() {
         check_ajax_referer('generate_article_nonce', 'security');
     
