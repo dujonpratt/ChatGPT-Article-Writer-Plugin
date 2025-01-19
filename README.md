@@ -12,8 +12,6 @@ Gutenberg Compatibility: Enhance your editor experience with AI-generated conten
 AJAX-Powered Workflow: Enjoy smooth, real-time operations for article generation.
 
 Installation 🔧
-Clone the repository:
-git clone https://github.com/dujonpratt/chatgpt-article-writer.git
 Upload the plugin folder to your WordPress installation directory:
 
 /wp-content/plugins/
